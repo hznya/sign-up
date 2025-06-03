@@ -4,28 +4,31 @@
     <title>회원가입</title>
     <link href="./styles/final.css" rel="stylesheet" />
     <script src="final.js" ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div class="wrapper">
-        <h3>HZN world</h3>
-        <div class="intro">
-            지금 가입하고, 더 많은 정보를 받아보세요!
-        </div>
-        <input class="inputbox" id="email" type="text" placeholder="이메일을 입력해 주세요."/>
-        <div class="error" id="error__email"></div>
-        <input class="inputbox" id="writer" type="text" placeholder="이름을 입력해 주세요."/>
-        <div class="error" id="error__writer"></div>
-        <input class="inputbox" id="password1" type="password" placeholder="비밀번호를 입력해 주세요."/>
-        <div class="error" id="error__password1"></div>
-        <input class="inputbox" id="password2" type="password" placeholder="비밀번호를 다시 입력해 주세요."/>
-        <div class="error" id="error__password2"></div>
-        <div class="phone__wrapper">
-            <input id="phone1" class="phoneNum" type="text" onchange="changePhone1()" onkeyup="onchange()" /> -
-            <input id="phone2" class="phoneNum" onchange="changePhone2()" onkeyup="onchange()" /> -
-            <input id="phone3" class="phoneNum" onchange="changePhone3()" onkeyup="onchange()" />
-        </div>
-        <div class="token__wrapper">
-            <div class="token" id="token">000000</div>
+    <div class="container">
+
+        <div class="wrapper">
+            <h3>HZN world</h3>
+            <div class="intro">
+                지금 가입하고, 더 많은 정보를 받아보세요!
+            </div>
+            <input class="inputbox" id="email" type="text" placeholder="이메일을 입력해 주세요."/>
+            <div class="error" id="error__email"></div>
+            <input class="inputbox" id="writer" type="text" placeholder="이름을 입력해 주세요."/>
+            <div class="error" id="error__writer"></div>
+            <input class="inputbox" id="password1" type="password" placeholder="비밀번호를 입력해 주세요."/>
+            <div class="error" id="error__password1"></div>
+            <input class="inputbox" id="password2" type="password" placeholder="비밀번호를 다시 입력해 주세요."/>
+            <div class="error" id="error__password2"></div>
+            <div class="phone__wrapper">
+                <input id="phone1" class="phoneNum" type="text" onchange="changePhone1()" onkeyup="onchange()" /> -
+                <input id="phone2" class="phoneNum" onchange="changePhone2()" onkeyup="onchange()" /> -
+                <input id="phone3" class="phoneNum" onchange="changePhone3()" onkeyup="onchange()" />
+            </div>
+            <div class="token__wrapper">
+                <div class="token" id="token">000000</div>
             <button id="token__button" onclick="getToken()" disabled>인증번호 전송</button>
         </div>
         <div class="token__wrapper">
@@ -55,5 +58,6 @@
             <button id="signup__button" onclick="signup()" disabled>가입하기</button>
         </div>
     </div>
+</div>
 </body>
 </html>

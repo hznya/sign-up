@@ -3,13 +3,22 @@
     margin: 0px;
 }
 
-body {
+html, body {
+    overflow: auto;
     width: 100vw;
     height: 100vh;
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .wrapper {
